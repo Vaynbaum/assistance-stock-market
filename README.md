@@ -48,5 +48,7 @@ After that, you need to choose from the added `assets`, or first add it and then
 # Technologies in the project
 
 The application is written using the platform .Net
+
 The data is obtained via the API of [the Twelve Data website](https://twelvedata.com/)
+
 The database is a local Microsoft SQL
