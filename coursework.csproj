@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0EB8F30-EF22-4C17-970A-8ADCD00863B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>coursework</RootNamespace>
+    <AssemblyName>coursework</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AssetContr.cs" />
+    <Compile Include="Controllers\AuthContr.cs" />
+    <Compile Include="Controllers\DBContr.cs" />
+    <Compile Include="Controllers\Download\DownloadControllers\AssetDownloadContr.cs" />
+    <Compile Include="Controllers\Download\DownloadControllers\DownloadContr.cs" />
+    <Compile Include="Controllers\Download\DownloadControllers\MarketDownloadContr.cs" />
+    <Compile Include="Controllers\Download\DownloadControllers\QuoteDownloadContr.cs" />
+    <Compile Include="Controllers\Download\DownloadedItem\AssetDownloadedG.cs" />
+    <Compile Include="Controllers\Download\DownloadedItem\DownloadedData.cs" />
+    <Compile Include="Controllers\Download\DownloadedItem\MarketDownloadedG.cs" />
+    <Compile Include="Controllers\Download\DownloadedItem\MetaG.cs" />
+    <Compile Include="Controllers\Download\DownloadedItem\TimeSeries.cs" />
+    <Compile Include="Controllers\Download\DownloadedItem\ValueG.cs" />
+    <Compile Include="Controllers\Filter\FilterContr.cs" />
+    <Compile Include="Controllers\Filter\FilterRule.cs" />
+    <Compile Include="Controllers\Filter\AssetFilterRules.cs" />
+    <Compile Include="Controllers\Filter\ILogExp.cs" />
+    <Compile Include="Controllers\Filter\ILogExps.cs" />
+    <Compile Include="Controllers\Filter\LogExpEnum.cs" />
+    <Compile Include="Controllers\Filter\MarketFilterRules.cs" />
+    <Compile Include="Controllers\Managers\AssetManager.cs" />
+    <Compile Include="Controllers\Managers\Manager.cs" />
+    <Compile Include="Controllers\Managers\MarketManager.cs" />
+    <Compile Include="Controllers\QuoteContr.cs" />
+    <Compile Include="Controllers\MainContr.cs" />
+    <Compile Include="Controllers\MarketContr.cs" />
+    <Compile Include="db\Investment.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Investment.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\Investment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Investment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\Investment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Investment.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="db\TAccount.cs">
+      <DependentUpon>Investment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\TAccountG.cs" />
+    <Compile Include="db\TAssetG.cs" />
+    <Compile Include="db\TMarketG.cs" />
+    <Compile Include="db\TAsset.cs">
+      <DependentUpon>Investment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\TMarket.cs">
+      <DependentUpon>Investment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Exceptions\AccessUndefinedValueException.cs" />
+    <Compile Include="Exceptions\AddMarketException.cs" />
+    <Compile Include="Exceptions\AddQuoteException.cs" />
+    <Compile Include="Exceptions\DeleteAssetException.cs" />
+    <Compile Include="Exceptions\DeleteMarketException.cs" />
+    <Compile Include="Exceptions\DeleteQuoteException.cs" />
+    <Compile Include="Exceptions\GettedAccountException.cs" />
+    <Compile Include="Exceptions\GettingQoutesException.cs" />
+    <Compile Include="Exceptions\SetCurrentAssetException.cs" />
+    <Compile Include="Factories\AccountFactory.cs" />
+    <Compile Include="Factories\AssetFactory.cs" />
+    <Compile Include="Factories\LogExpFactory.cs" />
+    <Compile Include="Factories\MarketFactory.cs" />
+    <Compile Include="Factories\QouteFactory.cs" />
+    <Compile Include="Fields\AssetFields.cs" />
+    <Compile Include="Fields\Field.cs" />
+    <Compile Include="Fields\MarketFields.cs" />
+    <Compile Include="Controllers\Filter\FieldExp.cs" />
+    <Compile Include="Forms\AddAssetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddAssetForm.Designer.cs">
+      <DependentUpon>AddAssetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddMarketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddMarketForm.Designer.cs">
+      <DependentUpon>AddMarketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AuthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AuthForm.Designer.cs">
+      <DependentUpon>AuthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FilterForm.Designer.cs">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormStringComp.cs" />
+    <Compile Include="Model\Asset.cs" />
+    <Compile Include="Model\KeyToAPI.cs" />
+    <Compile Include="Model\Market.cs" />
+    <Compile Include="Model\Quote.cs" />
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\Session.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddAssetForm.resx">
+      <DependentUpon>AddAssetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddMarketForm.resx">
+      <DependentUpon>AddMarketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AuthForm.resx">
+      <DependentUpon>AuthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FilterForm.resx">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="db\Investment.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Investment.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="db\Investment.edmx.diagram">
+      <DependentUpon>Investment.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db\Investment.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Investment.Context.cs</LastGenOutput>
+      <DependentUpon>Investment.edmx</DependentUpon>
+    </Content>
+    <Content Include="db\Investment.edmx.sql" />
+    <Content Include="db\Investment.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Investment.cs</LastGenOutput>
+      <DependentUpon>Investment.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

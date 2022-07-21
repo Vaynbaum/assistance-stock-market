@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbbreviationAssetNameType" xml:space="preserve">
+    <value>Сокращение</value>
+  </data>
+  <data name="AbbreviationMarketNameType" xml:space="preserve">
+    <value>Сокращение</value>
+  </data>
+  <data name="CountryAssetNameType" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="CountryMarketNameType" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="CurrenyAssetNameType" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="DefaultNameNewAsset" xml:space="preserve">
+    <value>Новый актив ({0})</value>
+  </data>
+  <data name="DefaultNameNewMarket" xml:space="preserve">
+    <value>Новая биржа ({0})</value>
+  </data>
+  <data name="ErroeMessageWarningNotSelectedMarket" xml:space="preserve">
+    <value>Не выбрана биржа для добавления  актива</value>
+  </data>
+  <data name="ErrorMessageWarningNotExistCurrentAsset" xml:space="preserve">
+    <value>Не выбран текущий актив</value>
+  </data>
+  <data name="ErrorMessageWarningNotExistSelectAsset" xml:space="preserve">
+    <value>Нет отмеченного актива</value>
+  </data>
+  <data name="ErrorMessageWarningNotExistSelectMarket" xml:space="preserve">
+    <value>Нет отмеченной биржи</value>
+  </data>
+  <data name="ErrorMessageWarningNotExistTypeAsset" xml:space="preserve">
+    <value>Актив с данным типом создать невозможно</value>
+  </data>
+  <data name="HeaderQuoteChart" xml:space="preserve">
+    <value>Котировки</value>
+  </data>
+  <data name="InstrumentAssetNameType" xml:space="preserve">
+    <value>Название инструмента</value>
+  </data>
+  <data name="MICMarketNameType" xml:space="preserve">
+    <value>Идентификационный код рынка</value>
+  </data>
+  <data name="NameAddButtonForm" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="NameAssetNameType" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="NameCheckboxFilter" xml:space="preserve">
+    <value>checkBox_{0}</value>
+  </data>
+  <data name="NameLabelFilter" xml:space="preserve">
+    <value>label_{0}</value>
+  </data>
+  <data name="NameMarketNameType" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="NamePanelFilter" xml:space="preserve">
+    <value>panel_{0}</value>
+  </data>
+  <data name="NameRadioButtonFilter" xml:space="preserve">
+    <value>radioButton_{0}_{1}</value>
+  </data>
+  <data name="NameTextboxFilter" xml:space="preserve">
+    <value>textBox_{0}</value>
+  </data>
+  <data name="NameTypeAssetNameType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="TimezoneMarketNameType" xml:space="preserve">
+    <value>Часовой пояс</value>
+  </data>
+  <data name="TypeNameCurrencyAsset" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="TypeNameStockAsset" xml:space="preserve">
+    <value>Акция обыкновенная</value>
+  </data>
+  <data name="URLForDownloadAssetsByMarket" xml:space="preserve">
+    <value>https://api.twelvedata.com/stocks?source=docs&amp;exchange={0}</value>
+  </data>
+  <data name="URLForDownloadAssetsByName" xml:space="preserve">
+    <value>https://api.twelvedata.com/symbol_search?symbol={0}&amp;exchange={1}</value>
+  </data>
+  <data name="URLForDownloadCryptoMarkets" xml:space="preserve">
+    <value>https://api.twelvedata.com/cryptocurrency_exchanges?source=docs</value>
+  </data>
+  <data name="URLForDownloadMarketByName" xml:space="preserve">
+    <value>https://api.twelvedata.com/exchanges?name={0}</value>
+  </data>
+  <data name="URLForDownloadMarkets" xml:space="preserve">
+    <value>https://api.twelvedata.com/exchanges?source=docs</value>
+  </data>
+  <data name="URLForDownloadQuotes" xml:space="preserve">
+    <value>https://api.twelvedata.com/time_series?symbol={0}:{1}&amp;timezone={2}&amp;start_date={3}&amp;end_date={4}&amp;interval=30min&amp;apikey={5}</value>
+  </data>
+  <data name="WordContainFilter" xml:space="preserve">
+    <value>Содержит</value>
+  </data>
+  <data name="WordEquallyFilter" xml:space="preserve">
+    <value>=</value>
+  </data>
+  <data name="WordNoLookFilter" xml:space="preserve">
+    <value>не учитывать</value>
+  </data>
+  <data name="WordNotContainFilter" xml:space="preserve">
+    <value>Не содержит</value>
+  </data>
+  <data name="WordNotEquallyFilter" xml:space="preserve">
+    <value>!=</value>
+  </data>
+</root>
