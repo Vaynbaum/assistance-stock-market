@@ -1,54 +1,54 @@
 # Assistance stock market
 
-This is a course work on OOP 2021
+Это курсовая работа по ООП 2021
 
-The application allows you to `get` acquainted with general information about about `stock exchanges` and `assets`. 
-The user can also `add` stock exchanges and assets to his "My Portfolio" if desired, in order to get `quotes of the asset` at any time.
+Приложение позволяет `получать` общую информацию о `фондовых биржах` и `активах`. 
+Пользователь также может `добавлять` фондовые биржи и активы в `Закладки` при желании, для того, чтобы получить `котировки актива` в любое время.
 
 ***
 
-# Domain model
+# Модель предметной области
 
-The main objects are the `account`, `stock exchanges`, `assets`, `quotes`.
+Основными объектами являются `учетная запись`, `фондовые биржи`, `активы`, `котировки`.
 
-The `Account` object contains information about the user's username and password, as well as a list of stock exchanges added to My Portfolio for quick search.
+Объект `Account` содержит информацию об имени пользователя и пароле, а также список фондовых бирж, добавленных в `Закладки` для быстрого поиска.
 
-The `Market` object contains general information of the stock exchange: country, abbreviation, unique identification number, time zone, 
-as well as a list of assets added for quick search, which are traded on this stock exchange. 
+Объект `Market` содержит общую информацию о фондовой бирже: страну, аббревиатуру, уникальный идентификационный номер, часовой пояс,
+а также список добавленных для быстрого поиска активов, которые торгуются на данной фондовой бирже. 
 
-The `Asset` object contains the general information of the asset: country, abbreviation, asset type, name of the investment instrument, 
-the currency traded, as well as a number of quotes received in a specific time interval. 
+Объект `Asset` содержит общую информацию об активе: страна, аббревиатура, тип актива, название инвестиционного инструмента, 
+торгуемая валюта, а также количество котировок, полученных за определенный промежуток времени. 
 
-The `Quote` object contains information of one asset quote: time stamp, opening price, closing price, maximum and minimum prices
+Объект `Quote` содержит информацию о котировке одного актива: временную метку, цену открытия, цену закрытия, максимальную и минимальную цены
 
 <img width="700px" src="https://user-images.githubusercontent.com/78900834/180268119-78327083-09a8-484e-bb14-9d39c1526d37.png"> 
 
-# About the app
-The application allows
-1. Authorization of users
-2. Receiving data on stock exchanges, assets and quotes via the API of [the Twelve Data website](https://twelvedata.com/)
-3. Filtering when adding
-4. Saving this data to the database 
-5. Visualization of the received quotes
+# О приложении
+Функционал приложения:
+1. Авторизация пользователя
+2. Получение данные о биржах, активах и котировках через API [веб-сайта Twelve Data](https://twelvedata.com/)
+3. Фильтрация при добавлении
+4. Сохранение этих данных в базе данных 
+5. Визуализация полученных котировок
 
-# How To Use
-By launching the application, the user can use its functionality `after authorization or registration`. 
-To do this, he should go to the authorization form, select one of the operations and fill in the fields.
-After that, if the values were entered correctly, a login will occur, otherwise, an error will be displayed.
+# Как использовать
+Запустив приложение, пользователь может воспользоваться его функционалом `после авторизации или регистрации`. 
+Для этого ему следует зайти в форму авторизации, выбрать одну из операций и заполнить поля.
+После этого, если значения были введены правильно, произойдет вход в систему, в противном случае будет выведено сообщение об ошибке.
 
 <img width="485" alt="image" src="https://user-images.githubusercontent.com/78900834/180276083-31e558f5-4dbd-4363-b41b-5e8904743037.png">
 
-To `get quotes`, the user needs to `select an stock exchange` from previously added stock exchanges, or add a new exchange, and then select it. 
-After that, you need to choose from the added `assets`, or first add it and then `select`. After that, the user `sets the time interval` and `receives quotes`.
+Чтобы `получить котировки`, пользователю необходимо `выбрать фондовую биржу` из ранее добавленных фондовых бирж или добавить новую биржу, а затем выбрать ее. 
+После этого вам нужно выбрать один из добавленных `активов` или сначала добавить его, а затем `выбрать`. После этого пользователь `устанавливает временной интервал` и `получает котировки`.
 
 <img width="210" alt="image" src="https://user-images.githubusercontent.com/78900834/180276726-04a4a7cb-f792-4169-8db0-df8e66ea05f1.png">
 <img width="380" alt="image" src="https://user-images.githubusercontent.com/78900834/180276800-37b50766-0658-4d71-897f-7d3f593c9aaf.png">
 <img width="739" alt="image" src="https://user-images.githubusercontent.com/78900834/180276657-09d9fbc8-aada-4b20-9ca0-43631cce3aa2.png">
 
-# Technologies in the project
+# Технологии в проекте
 
-The application is written using the platform .Net
+Приложение написано с использованием платформы .Net
 
-The data is obtained via the API of [the Twelve Data website](https://twelvedata.com/)
+Данные получены через API [веб-сайта Twelve Data](https://twelvedata.com/)
 
-The database is a local Microsoft SQL
+База данных представляет собой локальный сервер Microsoft SQL
